@@ -1,0 +1,125 @@
+:root{
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1440px;
+}
+
+.header{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.header .title1{
+    font-weight: 200;
+    color: var(--very-dark-blue);
+    font-size: 35px;
+}
+
+.header .title2{
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+    font-size: 35px;
+}
+
+
+.header .title3{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--grayish-blue)
+}
+
+/* Main */
+
+.main{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.main .supervisor{
+    background-color: var(--very-light-gray);
+    border-top: 3px solid var(--color-cyan);
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px var(--grayish-blue);
+    padding: 25px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+.main .middle{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main .middle .team-builder{
+    background-color: var(--very-light-gray);
+    border-top: 3px solid var(--color-red);
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px var(--grayish-blue);
+    padding: 25px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+.main .middle .karma{
+    background-color: var(--very-light-gray);
+    border-top: 3px solid var(--color-orange);
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px var(--grayish-blue);
+    padding: 25px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+.main .calculator{
+    background-color: var(--very-light-gray);
+    border-top: 3px solid var(--color-blue);
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px var(--grayish-blue);
+    padding: 25px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+.main h2{
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.main p{
+    margin-top: 20px;
+    color: var(--grayish-blue);
+    font-size: 15px
+}
+
+.main figure{
+    text-align: end;
+    padding: 20px 15px 0;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
