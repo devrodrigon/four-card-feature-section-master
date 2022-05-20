@@ -44,10 +44,15 @@ body{
 
 .main{
     margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    grid-column: center;
+    justify-self: center;
+}
+
+.main section{
+    height: fit-content;
 }
 
 .main .supervisor{
@@ -55,9 +60,10 @@ body{
     border-top: 3px solid var(--color-cyan);
     border-radius: 5px;
     box-shadow: 1px 1px 30px var(--grayish-blue);
+    max-width: 350px;
     padding: 25px;
-    width: 350px;
     box-sizing: border-box;
+    align-self: center;
 }
 
 .main .middle{
@@ -71,8 +77,8 @@ body{
     border-top: 3px solid var(--color-red);
     border-radius: 5px;
     box-shadow: 1px 1px 30px var(--grayish-blue);
+    max-width: 350px;
     padding: 25px;
-    width: 350px;
     box-sizing: border-box;
 }
 
@@ -81,8 +87,8 @@ body{
     border-top: 3px solid var(--color-orange);
     border-radius: 5px;
     box-shadow: 1px 1px 30px var(--grayish-blue);
+    max-width: 350px;
     padding: 25px;
-    width: 350px;
     box-sizing: border-box;
 }
 
@@ -92,8 +98,9 @@ body{
     border-radius: 5px;
     box-shadow: 1px 1px 30px var(--grayish-blue);
     padding: 25px;
-    width: 350px;
+    max-width: 350px;
     box-sizing: border-box;
+    align-self: center;
 }
 
 .main h2{
@@ -121,5 +128,14 @@ body{
     color: hsl(228, 45%, 44%); 
 }
 
+@media screen and (max-width: 800px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+}
 
 
